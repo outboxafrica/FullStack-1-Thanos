@@ -1,6 +1,7 @@
 body{
     margin: 0;
     font-family: Spartan,'Courier New', Courier, monospace;
+    overflow: auto;
 }
 .wrapper{
     position: fixed;
@@ -171,6 +172,7 @@ height:250px;
     width: 80%;
     position: relative;
     margin: 0 auto;
+    overflow: auto;
 }
 .page-column{
     flex: 50%;
