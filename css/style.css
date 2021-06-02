@@ -8,22 +8,40 @@ body{
     height: 100%;
     background: #f7edff91;
     overflow: auto;
+}
+.nav {
+    background-color:#8E234D !important;
    
-}
-.header{
-    display: flex;
-    margin: 20px;
-}
+   }
+   
+   .nav-wrapper {
+      background-color:#8E234D !important;
+      font-size: 14px;
+      font-weight: bold;
+    }
+   
+          .card {
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+            transition: 0.3s;
+            width: 40%;
+          }
+          
+          .card:hover {
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+          }
+    
+          .container {
+            padding: 2px 16px;
+  }
+
 nav{
-    text-align: right;
+    /* text-align: right; */
     flex: 50%;
 }
 nav ul li{
     display: inline;
 }
-nav ul li i{
-    color: #FFFFFF;
-}
+
 nav ul li a{
    text-decoration: none;
    color:#8E234D;
@@ -33,21 +51,30 @@ nav ul li a:hover{
     border-bottom: 1px solid #8E234D;
 }
 
-.logo{
-   flex: 50%;
+.brand-logo{
+  right: 20px;
 }
-.logo h1{
-    text-align: left;
-    color:#8E234D;
-    text-emphasis: bold;
+
+/* .container{
+    display: inline-block;
+} */
+.about-bump{
+    display: inline;
+    width: 30%;
+
 }
+.features{
+    width: 70%;
+    display: inline;
+}
+
 .row{
 display: flex;
 width: 100%;
 display: -webkit-flex;
 -webkit-flex-wrap: wrap;
 flex-wrap: wrap;
-
+height: 45%;
 }
 .column{
 flex: 1;
@@ -56,6 +83,8 @@ background: #8E234D;
 border-radius: 20px;
 text-align: center;
 height: 100%;
+box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+transition: 0.3s;
 }
 .column h1{
 font-style: normal;
@@ -66,23 +95,34 @@ text-align: center;
 }
 
 .column img{
-width:95%;
+width:100%;
 height:250px;
-border-radius: 10px;
+/* border-radius: 10px; */
 }
 .page-link{
  display: inline;
  width: 80%;
- margin: 10px;
+ text-align: center;
+
 }
 
 .page-link a{
-    padding:5px;
     color:#fff;
     text-decoration: none;
-    text-align: center;
+    text-align: left;
     position: relative;
     width:50%;
+   
+}
+.page-link a i{
+    position: relative;
+    top: 5px;
+    text-decoration: none;
+    text-align: center;
+    /* padding: 10px; */
+    display: inline;
+    /* position: relative; */
+    /* width:50%; */
 }
 .page-link a:hover{
     color:#f5a207;
@@ -102,6 +142,28 @@ border-radius: 10px;
         height: auto;
         flex-direction: column;
         }
+        .brand-logo{
+            right:5%;
+            font-size:4px;
+            display: none !important;
+          }
+          .page-row{
+            display: flex;
+            width: 80%;
+            position: relative;
+            margin: 0 auto;
+            flex-direction: column;
+        }
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+            transition: 0.3s;
+            width: 100%;
+            height: auto;
+          }
+          
+          .card:hover {
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+          }
  } 
  /* pregnancy page */
 .page-row{
